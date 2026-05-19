@@ -18,11 +18,38 @@ This includes inputs such as:
 - Vendor advisories
 - Media reporting
 - Community analysis
+- Open‑source intelligence (OSINT) streams
+- Vulnerability databases and exploit feeds
+- Regulatory and geopolitical updates
 
-Each source is valuable.  
-Together, they form a **firehose**.
+Each source is valuable.
+
+Together, they form a continuous, high‑volume signal environment—far beyond what any individual or team can reasonably process.
+
+
+## The Scale Challenge: From Feeds to Overload
+Tracking a small number of feeds is manageable.
+
+Tracking 1000s of feeds introduces entirely new problems:
+* **Signal duplication at scale**
+  * The same underlying event appears hundreds of times with slight variations.
+* **Temporal misalignment**
+  * Early signals, confirmations, and retrospectives arrive at different times.
+* **Narrative divergence**
+  * Different sources interpret the same situation differently.
+* **Hidden weak signals**
+  * Early indicators are buried under high-volume reporting.
+* **Cognitive exhaustion**
+  * Humans cannot continuously parse thousands of inputs across domains.
+
+This is no longer a filtering problem.
+
+It is a situational comprehension problem.
+
+---
 
 To keep up, we spend significant time in:
+- **Daily situational monitoring** (new signals, alerts, and immediate developments)
 - **Weekly threat briefings** (emerging threats)
 - **Monthly reviews** (ongoing risk)
 - **Quarterly outlooks** (trend summaries)
@@ -33,6 +60,10 @@ Each set of briefings:
 - reflects different levels of delay,
 - mixes signal with opinion,
 - and often contradicts other sources.
+
+Each source is valuable.  
+
+Together, they form a **firehose**.
 
 Despite all this effort, we are still left asking the same question:
 
@@ -99,10 +130,16 @@ This project is building a **situational intelligence platform**, not another fe
 At a high level, the platform:
 
 - Ingests signals across **technical, organizational, regulatory, economic, and geopolitical domains**
+- Correlates and deduplicates signals into a unified representation
 - Clusters related signals into **situations**, not isolated events
 - Interprets those situations across **near‑, mid‑, and far‑time horizons**
 - Adapts the explanation based on **who is making a decision**
 - Makes uncertainty, confidence, and contradiction explicit rather than hiding them
+
+Critically, the system is designed for:
+- Scale (thousands of feeds, continuous ingestion)
+- Context (role, sector, environment awareness)
+- Temporal reasoning (how situations evolve over time)
 
 The goal is not to replace existing tools or trusted sources.
 
